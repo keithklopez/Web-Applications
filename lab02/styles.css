@@ -1,0 +1,142 @@
+﻿
+
+
+:root{
+    --bg-color: mediumslateblue;
+    --font-color: white;
+    --nav-color: royalblue;
+    --nav-text-color: white;
+    --nav:black;
+    --font-size: 25px;
+}
+
+
+
+    body {
+        margin: 0px 50px 0px 50px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+        body:active {
+
+            --bg-color: royalblue;
+            --font-color: white;
+            --nav-color: mediumslateblue;
+            --nav-text-color: white;
+            --nav: white;
+            --font-size: 25px;
+            background-color: var(--nav-color);
+        }
+
+    header {
+        background-color: var(--bg-color);
+        color: var(--font-color);
+        padding: 30px;
+        font-size: 20px;
+        vertical-align: middle;
+    }
+
+    nav {
+        color: var(--nav-text-color);
+        background-color: var(--nav-color);
+        margin: -18px 0px 0px 0px;
+        border-radius: 0px 0px 15px 15px
+    }
+
+    .nologo {
+        display:none;
+    }
+.logo {
+    padding-left: 0px;
+}
+
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+}
+
+li {
+        color: var(--font-color);
+        display: inline;
+        font-size: var(--font-size);
+        padding: 0px 25px 0px 25px;
+
+    }
+
+li:hover {
+            background-color: var(--bg-color);
+            font-size: 25px;
+        }
+
+    main {
+        color: black;
+        padding-left: 20px;
+    }
+
+    p {
+        padding-left: 30px;
+        color: var(--nav);
+    }
+
+    section h1 {
+        color: var(--bg-color);
+    }
+    a{
+        color:white;
+        text-decoration:none;
+    }
+    footer {
+        color: var(--bg-color);
+        text-align: center;
+    }
+
+   
+
+
+
+@media screen and (max-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    body {
+        margin: 0px 10px 0px 10px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    ul {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .logo {
+        display:none;
+    }
+
+    .nologo {
+        display:contents
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        display: flex;
+    }
+
+    section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    p {
+        padding-left: 0px;
+    }
+}

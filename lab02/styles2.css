@@ -1,0 +1,42 @@
+﻿body
+{
+   
+}
+
+section {
+    padding-left: 10px;
+}
+
+.jumbotron {
+    background-color: #007bff;
+}
+
+.btn{
+    margin-top: -50px;
+}
+@media screen and (max-width: 992px) {
+
+    .row {
+        display: flex;
+    }
+
+    .row > div {
+        flex: 50%;
+    }
+
+  
+
+@media screen and (max-width: 768px) {
+   .row {
+       display:flex;
+       flex-direction:column;
+   }
+
+   #hr {
+       display:none;
+   }
+}
+
+@media screen and (max-width: 576px) {
+    
+}
