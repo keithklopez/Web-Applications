@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Forms Demo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class="my-4 p-4 border border-secondary">
+        <h1>Milkshake's Bar <img src="milkshake.png" alt="milkshake_logo" height="64" width="64" /></h1>
+        <div class="my-4 p-4 border border-secondary">
+            <h2 class="pb-2">Beverage Order</h2>
+            <form>
+                <div class="col-sm-8 form-group row">
+                    <label class="col-sm-2 col-form-label">Customer Name</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="firstname" placeholder="">
+                    </div>
+                </div>
+                <div class="col-sm-8 form-group row">
+                    <label id="lol" class="col-sm-2 col-form-label">Beverage</label>
+                    <div class="col-sm-2">
+                        <select class="form-control" id="drinks" onchange="myFunction">
+                            <option value="0">Milkshake</option>
+                            <option value="1">Coffee</option>
+                            <option value="2">Tea</option>
+                            <option value="3">Beer</option>
+                            <option value="4">Wine</option>
+                        </select>
+                    </div>
+
+                    <label class="col-sm-1 col-form-label">Quantity</label>
+                    <div class="col-sm-2">
+                        <input type="number" min="0" max="1337" class="form-control" id="quantity" placeholder="">
+                    </div>
+                </div>
+                <div hidden id="birth" class="col-sm-8 form-group row">
+                    <label class="col-sm-1 col-form-label">Birthdate</label>
+                    <div class="col-sm-3">
+                        <input type="date" class="form-control" id="birthdate" placeholder="mm/dd/yyyy">
+                    </div>
+                </div>
+                <div class="col-sm-8 form-group row ">
+                    <div class="col-sm-2">
+                        <button type="button" id="add" class="btn btn-primary" role="button" onclick="f()"> Submit Order </button>
+                    </div>
+                </div>
+
+            </form>
+
+            <div hidden id="receipt" class="my-2 p-3 border col-sm-2 border-secondary">
+                <h5 id="customer" class="pt-2"></h5>
+                <p></p>
+                <h7 id="price" class="pt-2"></h7>
+                <p></p>
+                <h7 id="total" class="pt-2"></h7>
+            </div>
+
+        </div>
+
+
+        <script type="text/javascript" src="JavaScript.js"></script>
+        <script type="text/javascript" src="moment.js"></script>
+</body>
+</html>
